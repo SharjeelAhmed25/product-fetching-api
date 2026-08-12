@@ -1,5 +1,9 @@
+import { Link } from "react-router-dom";
+
 const Productcard = ({pid , title , price , category , productimg , description , rating }) => {
   return (
+
+    <Link to={`/productdetail/${pid}`}>
     <div className="bg-white rounded-2xl shadow-md overflow-hidden
       hover:shadow-xl hover:-translate-y-2 transition duration-300">
 
@@ -42,6 +46,7 @@ const Productcard = ({pid , title , price , category , productimg , description 
 
       </div>
     </div>
+    </Link>
   );
 };
 
